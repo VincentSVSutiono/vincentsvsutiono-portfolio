@@ -58,7 +58,7 @@ function App() {
           {/* Left Container */}
           <Stack
             w={{ base: "100%", xl: "25%" }}
-            h={{ base: "100%", xl: "100%" }}
+            h={{ base: "100%", xl: "fit-content" }}
             display={"flex"}
             direction={{ base: "row", xl: "column" }}
             align={{ base: "top", xl: "center" }}
@@ -178,7 +178,7 @@ function App() {
           {/* Right Section */}
           <Stack
             w={{ base: "100%", xl: "75%" }}
-            h={{ base: "fit-content", xl: "100%" }}
+            h={{ base: "fit-content", xl: "fit-content" }}
             p={4}
             borderRadius={8}
             bgColor={"rgba(23, 23, 23, 0.5)"}
