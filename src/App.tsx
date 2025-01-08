@@ -71,7 +71,7 @@ function App() {
             <Image
               src={Me}
               alt="me"
-              boxSize={{ base: "120px", xl: "250px" }}
+              boxSize={{ base: "120px", xl: "200px" }}
               h={{ base: "300px", xl: "unset" }}
               borderRadius={"lg"}
             />
@@ -87,13 +87,13 @@ function App() {
             >
               <Stack>
                 <Text
-                  textStyle={{ base: "xl", xl: "4xl" }}
+                  textStyle={{ base: "xl", xl: "3xl" }}
                   fontWeight={"medium"}
                 >
                   Vincent Sutiono
                 </Text>
                 <Text
-                  textStyle={{ base: "2xs", xl: "lg" }}
+                  textStyle={{ base: "2xs", xl: "md" }}
                   fontWeight={"light"}
                 >
                   Aspiring Full-Stack Developer with a Passion for IoT
@@ -104,7 +104,7 @@ function App() {
                 gap={{ base: 1, xl: 4 }}
                 mt={{ base: 5, xl: 4 }}
                 ms={{ base: 0, xl: 2 }}
-                textStyle={{ base: "sm", xl: "xl" }}
+                textStyle={{ base: "sm", xl: "md" }}
               >
                 <a
                   href="http://www.linkedin.com/in/vincent-sutiono"
@@ -161,11 +161,11 @@ function App() {
               <Button
                 w={{ base: "85%", xl: "65%" }}
                 h={{ base: "13%", xl: "18%" }}
-                size={"xl"}
+                size={"lg"}
                 bgColor={"white"}
                 _hover={{ bgColor: "gray.400" }}
                 mx={"auto"}
-                mt={6}
+                mt={4}
               >
                 <a href={cv} download="CV_Vincent_Sutiono.pdf">
                   <Text color={"black"} fontWeight={"bolder"}>
@@ -216,7 +216,7 @@ function App() {
                 <Stack p={4} gap={4} textAlign={"justify"}>
                   <Stack>
                     <Text
-                      textStyle={{ base: "xl", xl: "3xl" }}
+                      textStyle={"xl"}
                       fontWeight={"bold"}
                       letterSpacing={2}
                     >
@@ -224,7 +224,7 @@ function App() {
                     </Text>
                     <Stack
                       w={{ base: "60%", xl: "15%" }}
-                      py={{ base: 1, xl: 2 }}
+                      py={1}
                       bgColor={"yellow"}
                     ></Stack>
                   </Stack>
@@ -251,10 +251,10 @@ function App() {
                   >
                     {skills.map(({ icon, text }, index) => (
                       <Stack key={index} gap={4}>
-                        <Stack fontSize="5xl" mx="auto">
+                        <Stack fontSize="3xl" mx="auto">
                           {icon}
                         </Stack>
-                        <Text textStyle="md" w="80%" mx="auto">
+                        <Text textStyle="sm" w="80%" mx="auto">
                           {text}
                         </Text>
                       </Stack>
@@ -268,7 +268,7 @@ function App() {
                       gap={4}
                     >
                       <Stack
-                        fontSize={{ base: "xl", xl: "3xl" }}
+                        fontSize={"xl"}
                         border={"1px solid yellow"}
                         rounded={"full"}
                         p={3}
@@ -277,7 +277,7 @@ function App() {
                         <FaBookOpen color={"yellow"} />
                       </Stack>
                       <Text
-                        textStyle={{ base: "md", xl: "2xl" }}
+                        textStyle={{ base: "md", xl: "lg" }}
                         fontWeight={"bold"}
                         letterSpacing={2}
                       >
@@ -293,7 +293,7 @@ function App() {
                       ms={5}
                     >
                       <Stack
-                        p={{ base: 1, xl: 2 }}
+                        p={1}
                         rounded={"full"}
                         bgColor={"yellow"}
                         h={"fit-content"}
@@ -301,18 +301,18 @@ function App() {
                       ></Stack>
                       <Stack ps={5}>
                         <Text
-                          textStyle={{ base: "xs", xl: "md" }}
+                          textStyle={{ base: "xs", xl: "sm" }}
                           fontWeight={"semibold"}
                         >
                           Multimedia Nusantara University
                         </Text>
                         <Text
-                          textStyle={{ base: "xs", xl: "md" }}
+                          textStyle={{ base: "xs", xl: "sm" }}
                           color={"yellow"}
                         >
                           2022 - 2026
                         </Text>
-                        <Text textStyle={{ base: "xs", xl: "md" }}>
+                        <Text textStyle={{ base: "xs", xl: "sm" }}>
                           Undergraduate Computer Engineering Student
                         </Text>
                       </Stack>
@@ -335,7 +335,7 @@ function App() {
                 <Stack p={4} gap={4} textAlign={"justify"}>
                   <Stack>
                     <Text
-                      textStyle={{ base: "xl", xl: "3xl" }}
+                      textStyle={"xl"}
                       fontWeight={"bold"}
                       letterSpacing={2}
                     >
@@ -343,7 +343,7 @@ function App() {
                     </Text>
                     <Stack
                       w={{ base: "60%", xl: "15%" }}
-                      py={{ base: 1, xl: 2 }}
+                      py={1}
                       bgColor={"yellow"}
                     ></Stack>
                     <Stack
@@ -351,7 +351,7 @@ function App() {
                       direction={"row"}
                       justify={"space-evenly"}
                       gap={4}
-                      mt={5}
+                      mt={3}
                       wrap={"wrap"}
                     >
                       {techStackData.map((section, index) => (
@@ -360,9 +360,9 @@ function App() {
                           gap={4}
                           display={"flex"}
                           align={"center"}
-                          w={{ base: "100%", xl: "20%" }}
+                          w={{ base: "100%", xl: "15%" }}
                         >
-                          <Text textStyle="xl" color={section.color} mt={3}>
+                          <Text textStyle="lg" color={section.color} mt={3}>
                             {section.title}
                           </Text>
                           <Stack
@@ -378,7 +378,7 @@ function App() {
                                 key={idx}
                                 src={logo.src}
                                 alt={logo.alt}
-                                boxSize={"5rem"}
+                                boxSize={"3rem"}
                                 filter={logo.filter || "none"}
                               />
                             ))}
@@ -394,7 +394,7 @@ function App() {
                         gap={4}
                       >
                         <Stack
-                          fontSize={{ base: "xl", xl: "3xl" }}
+                          fontSize={"xl"}
                           border={"1px solid yellow"}
                           rounded={"full"}
                           p={3}
@@ -403,7 +403,7 @@ function App() {
                           <LiaCertificateSolid color={"yellow"} />
                         </Stack>
                         <Text
-                          textStyle={{ base: "md", xl: "2xl" }}
+                          textStyle={{ base: "md", xl: "lg" }}
                           fontWeight={"bold"}
                           letterSpacing={2}
                         >
@@ -424,21 +424,18 @@ function App() {
                             direction={{ base: "column", xl: "row" }}
                           >
                             <Stack
-                              p={{ base: 0, xl: 2 }}
+                              p={{ base: 0, xl: 1 }}
                               rounded={"full"}
                               bgColor={"yellow"}
                               h={"fit-content"}
                               mt={{ base: 0, xl: 1 }}
                             ></Stack>
                             <Stack ps={5} me={5}>
-                              <Text
-                                textStyle={{ base: "xs", xl: "md" }}
-                                fontWeight={"semibold"}
-                              >
+                              <Text textStyle={"xs"} fontWeight={"semibold"}>
                                 {cert.title}
                               </Text>
                               <Text
-                                textStyle={{ base: "xs", xl: "md" }}
+                                textStyle={"xs"}
                               >{`issued by ${cert.issuer}`}</Text>
                               <a href={cert.link} target="_blank">
                                 <Stack
@@ -454,10 +451,7 @@ function App() {
                                   }}
                                   mt={2}
                                 >
-                                  <Text
-                                    textStyle={{ base: "xs", xl: "md" }}
-                                    color={"yellow"}
-                                  >
+                                  <Text textStyle={"xs"} color={"yellow"}>
                                     View Credentials
                                   </Text>
                                   <CiLocationArrow1 color={"yellow"} />
@@ -485,7 +479,7 @@ function App() {
               >
                 <Stack p={4} gap={4} textAlign={"justify"}>
                   <Text
-                    textStyle={{ base: "xl", xl: "3xl" }}
+                    textStyle={"xl"}
                     fontWeight={"bold"}
                     letterSpacing={2}
                     textAlign={"left"}
@@ -494,7 +488,7 @@ function App() {
                   </Text>
                   <Stack
                     w={{ base: "60%", xl: "15%" }}
-                    py={{ base: 1, xl: 2 }}
+                    py={1}
                     bgColor={"yellow"}
                   ></Stack>
                   <Stack
@@ -534,7 +528,7 @@ function App() {
                             />
                             <Text
                               w={"full"}
-                              textStyle={"lg"}
+                              textStyle={"md"}
                               bgColor={"bg.muted"}
                               p={4}
                               roundedBottom={"md"}
