@@ -58,7 +58,7 @@ function App() {
           {/* Left Container */}
           <Stack
             w={{ base: "100%", xl: "25%" }}
-            h={{ base: "100%", xl: "fit-content" }}
+            h={{ base: "100%", xl: "100%" }}
             display={"flex"}
             direction={{ base: "row", xl: "column" }}
             align={{ base: "top", xl: "center" }}
@@ -178,7 +178,7 @@ function App() {
           {/* Right Section */}
           <Stack
             w={{ base: "100%", xl: "75%" }}
-            h={{ base: "fit-content", xl: "fit-content" }}
+            h={{ base: "fit-content", xl: "100%" }}
             p={4}
             borderRadius={8}
             bgColor={"rgba(23, 23, 23, 0.5)"}
@@ -378,7 +378,7 @@ function App() {
                                 key={idx}
                                 src={logo.src}
                                 alt={logo.alt}
-                                boxSize={"3rem"}
+                                boxSize={"4rem"}
                                 filter={logo.filter || "none"}
                               />
                             ))}
@@ -416,7 +416,7 @@ function App() {
                         gap={4}
                         align={"top"}
                         mt={1}
-                        ms={5}
+                        ms={4}
                       >
                         {certificates.map((cert, index) => (
                           <Stack
@@ -424,18 +424,21 @@ function App() {
                             direction={{ base: "column", xl: "row" }}
                           >
                             <Stack
-                              p={{ base: 0, xl: 1 }}
+                              p={{ base: 0, xl: 2 }}
                               rounded={"full"}
                               bgColor={"yellow"}
                               h={"fit-content"}
                               mt={{ base: 0, xl: 1 }}
                             ></Stack>
                             <Stack ps={5} me={5}>
-                              <Text textStyle={"xs"} fontWeight={"semibold"}>
+                              <Text
+                                textStyle={{ base: "xs", xl: "md" }}
+                                fontWeight={"semibold"}
+                              >
                                 {cert.title}
                               </Text>
                               <Text
-                                textStyle={"xs"}
+                                textStyle={{ base: "xs", xl: "md" }}
                               >{`issued by ${cert.issuer}`}</Text>
                               <a href={cert.link} target="_blank">
                                 <Stack
@@ -451,7 +454,10 @@ function App() {
                                   }}
                                   mt={2}
                                 >
-                                  <Text textStyle={"xs"} color={"yellow"}>
+                                  <Text
+                                    textStyle={{ base: "xs", xl: "md" }}
+                                    color={"yellow"}
+                                  >
                                     View Credentials
                                   </Text>
                                   <CiLocationArrow1 color={"yellow"} />
@@ -528,7 +534,7 @@ function App() {
                             />
                             <Text
                               w={"full"}
-                              textStyle={"md"}
+                              textStyle={"lg"}
                               bgColor={"bg.muted"}
                               p={4}
                               roundedBottom={"md"}
