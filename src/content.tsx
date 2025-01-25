@@ -102,6 +102,11 @@ export const certificates = [
     issuer: "freeCodeCamp",
     link: "https://www.freecodecamp.org/certification/Quinnoah/responsive-web-design",
   },
+  {
+    title: "Relational Database",
+    issuer: "freeCodeCamp",
+    link: "https://www.freecodecamp.org/certification/Quinnoah/relational-database-v8",
+  },
 ];
 
 export const projects = [

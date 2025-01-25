@@ -413,6 +413,7 @@ function App() {
                       <Stack
                         display={"flex"}
                         direction={{ base: "column", xl: "row" }}
+                        overflowX={"scroll"}
                         gap={4}
                         align={"top"}
                         mt={1}
